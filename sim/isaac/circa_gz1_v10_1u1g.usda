@@ -1,0 +1,39 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def PhysicsScene "PhysicsScene" (
+        prepend apiSchemas = ["PhysxSceneAPI"]
+    )
+    {
+        vector3f physics:gravityDirection = (0, 0, -1)
+        float physics:gravityMagnitude = 0
+        uint physxScene:timeStepsPerSecond = 100
+    }
+
+    def Sphere "UAV" (
+        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMassAPI", "PhysicsRigidBodyAPI"]
+    )
+    {
+        double radius = 0.18
+        float physics:mass = 1
+        point3f xformOp:translate = (-4, -2, 2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cube "UGV" (
+        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMassAPI", "PhysicsRigidBodyAPI"]
+    )
+    {
+        double size = 1
+        float3 xformOp:scale = (0.5, 0.35, 0.2)
+        point3f xformOp:translate = (4, 2, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        float physics:mass = 1
+    }
+}

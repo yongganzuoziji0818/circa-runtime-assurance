@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="tavh_1u1g">
+    <physics name="deterministic_0p01" type="ignored">
+      <max_step_size>0.01</max_step_size>
+      <real_time_factor>0</real_time_factor>
+    </physics>
+    <gravity>0 0 0</gravity>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+
+    <model name="uav">
+      <pose>-4 -2 2 0 0 0</pose>
+      <static>false</static>
+      <link name="body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>0.02</ixx><iyy>0.02</iyy><izz>0.02</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry><sphere><radius>0.18</radius></sphere></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="ugv">
+      <pose>4 2 0.2 0 0 0</pose>
+      <static>false</static>
+      <link name="body">
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>0.03</ixx><iyy>0.03</iyy><izz>0.05</izz>
+            <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry><box><size>0.5 0.35 0.2</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+  </world>
+</sdf>
