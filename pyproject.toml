@@ -18,7 +18,11 @@ dependencies = [
 
 [project.optional-dependencies]
 pybullet = ["pybullet>=3.2.6"]
-test = ["pytest>=8"]
+test = [
+  "pytest>=8",
+  "cvxpy>=1.4",
+  "osqp>=0.6",
+]
 
 [project.urls]
 Repository = "https://github.com/yongganzuoziji0818/circa-runtime-assurance"

@@ -6,8 +6,11 @@ certificates, and simulator adapters for air-ground coordination studies.
 
 The July 2026 update adds the versioned Gazebo diversity worlds, independent
 adapter, V9 feasible-initial-domain implementation, segmented SCI-S3 runner,
-frozen analysis code, and non-running boundary/schema tests. The corresponding
-outcome-locked evidence is released separately as a versioned Zenodo archive.
+frozen analysis code, and non-running boundary/schema tests. It also adds the
+V10 bounded-loss theory utilities, typed offline assurance-case implementation,
+assumption-matched comparison code, exploratory mechanism analysis, and
+one-command public-artifact verifiers. The corresponding outcome-locked
+evidence is released separately as a versioned Zenodo archive.
 
 This is a code-only release. It intentionally excludes manuscripts, author
 contact records, experimental outputs, scientific seeds, execution receipts,
