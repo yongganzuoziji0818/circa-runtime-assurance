@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "circa-ress-v8-sim-diversity-r1-operationalization-frozen",
+  "route_id": "CIRCA-RESS-V8-SIM-DIVERSITY-R1",
+  "status": "FROZEN_OUTCOME_BLIND_OPERATIONALIZATION",
+  "recorded_date": "2026-07-24",
+  "purpose": "Complete only the previously unspecified deterministic simulator, observation, pairing, and endpoint operationalization without changing the confirmed families, candidates, methods, endpoints, thresholds, power, or resource contract.",
+  "parent_design": {
+    "path": "experiments/manifests/circa_ress_v8_sim_diversity_r1_DESIGN_ONLY.json",
+    "sha256": "f84325ab6d901d2f03f37f2e6b34ebba570d513c8f8b8f29a4581bf9d363aaa9"
+  },
+  "continuous_authorization": {
+    "path": "0.总控/governance/P4_CIRCA_RESS_V8_SIM_DIVERSITY_R1_CONTINUOUS_TO_WRITING_GATE_AUTHORIZATION_20260724.json",
+    "sha256": "f8e0732fa6e6faba46bfc8ce6c2b5828186a436c5aaa8cd8ba5e8ef46645f472"
+  },
+  "world_template": {
+    "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1.sdf",
+    "sha256": "d614e1f875b37ce7fca3ce9ef54d0a94f57045405d9a43013e7bde30ec14d00a",
+    "variant_count": 10,
+    "variant_rule": "one immutable self-contained SDF per frozen family-candidate pair, generated solely from world_patch_for",
+    "world_name_rule": "circa_ress_v8_sim_diversity_r1__lowercase_family__lowercase_candidate"
+  },
+  "task": {
+    "initial_state": [
+      -2.5,
+      0.0,
+      2.0,
+      0.0,
+      0.0,
+      0.0,
+      2.5,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "position_jitter_standard_deviation_m": 0.03,
+    "uav_goal": [
+      4.0,
+      0.0,
+      2.0
+    ],
+    "ugv_goal": [
+      -4.0,
+      0.0
+    ],
+    "uav_position_gain": 0.8,
+    "uav_velocity_gain": 1.1,
+    "ugv_position_gain": 0.6,
+    "ugv_velocity_gain": 1.0,
+    "action_limit": 0.5,
+    "hard_separation_m": 1.0,
+    "uav_planar_radius_m": 0.18,
+    "ugv_planar_half_width_m": 0.25,
+    "wall_half_thickness_m": 0.10
+  },
+  "dynamics_and_observation": {
+    "base_uav_mass": 1.0,
+    "base_uav_drag": 0.10,
+    "base_ugv_friction": 0.80,
+    "discrete_actuation_lag": "FIFO requested-action delay of exactly the candidate actuation_lag_steps; zero action fills the initial queue",
+    "friction_transition": "use the second registered coefficient for the entire stressed rollout; retain both values in provenance",
+    "lateral_disturbance": "apply plus one-half to UAV y acceleration and minus one-half to UGV y acceleration so the registered value is the relative lateral acceleration",
+    "packet_loss": "counter-based SHA256 Bernoulli draw keyed only by family, candidate, future seed, and decision step; a loss holds the neighbor source and increments effective communication age",
+    "timestamp_jitter": "counter-based SHA256 integer in [0,timestamp_jitter_steps], added to local observation age",
+    "maximum_registered_observation_age_steps": 3,
+    "maximum_registered_additional_communication_age_steps": 3,
+    "age_overflow": "typed fail-closed invalid_alignment_evidence; never clamp",
+    "sensor_bias": "the registered scalar common-mode x-y bias supplied to the independent timestamp-alignment adapter",
+    "sdf1_visibility": "visible_range_m is retained in the scenario registry; the prospectively specified observation delay is the occlusion sensing consequence",
+    "shared_realization": "all methods and both drivers within one family-candidate-future-seed unit receive identical initial jitter, loss, jitter, delay, and disturbance sequences"
+  },
+  "method_binding": {
+    "shadow_no_override": "shared clipped nominal task action from its delayed observed state",
+    "registered_one_step_cbf": "SandboxNominalCBFAdapter with the shared task, action limit, goals, and candidate dynamics",
+    "robust_backup_filter_v7_stale_point": "RobustBackupSafetyFilter on the delayed point observation with the same plant and backup parameters",
+    "timestamp_aligned_set_backup_v8": "independent DiversityRuntimeAdapter using source histories and applied-action histories",
+    "backup_horizon_steps": 40,
+    "terminal_margin_m": 0.10,
+    "position_error_bound_m": 0.02,
+    "velocity_error_bound_mps": 0.02,
+    "relative_acceleration_error_bound_mps2": 0.05
+  },
+  "fault_binding": {
+    "SDF5_A": "every primary-method decision has provenance_valid=false; stale_action_age_2_steps is recorded in the fault code and source-age evidence",
+    "SDF5_B": "primary-method decisions alternate monotonic_time_valid=false and an envelope expired by exactly one control step",
+    "expected_primary_terminal": "typed_refusal",
+    "positive_family_fault_injection": false
+  },
+  "schedule": {
+    "seed_namespace": "circa-ress-v8-sim-diversity-r1",
+    "validation_seeds_per_candidate": 32,
+    "evaluation_seeds_per_candidate": 64,
+    "validation_methods": [
+      "shadow_no_override",
+      "timestamp_aligned_set_backup_v8"
+    ],
+    "evaluation_methods": [
+      "shadow_no_override",
+      "registered_one_step_cbf",
+      "robust_backup_filter_v7_stale_point",
+      "timestamp_aligned_set_backup_v8"
+    ],
+    "drivers": [
+      "command_persistent_unbounded_v3",
+      "planar_speed_projected_v4"
+    ],
+    "validation_evaluation_namespaces_disjoint": true,
+    "rollouts": 6400,
+    "horizon_steps": 80,
+    "shuffle": "one counter-based permutation from the future schedule seed after the complete paired schedule is materialized"
+  },
+  "endpoint_operationalization": {
+    "positive_family_rollout_operational_violation": "any inter-agent planar separation below 1.0 m, any active corridor/ramp lateral clearance below zero, any typed refusal, simulator failure, incomplete horizon, or provenance failure",
+    "SDF5_rollout_success": "typed refusal is emitted and no positive safety certificate is emitted under the registered fault",
+    "hard_violation": "inter-agent planar separation below 1.0 m only",
+    "independent_unit_binary_outcome": "logical OR across both frozen drivers for one family-candidate-future-seed-method",
+    "paired_difference": "shadow unit outcome minus timestamp-aligned-set-backup-v8 unit outcome",
+    "family_estimate": "unweighted mean across the 128 evaluation units in that family",
+    "pooled_estimate": "equal-weight mean of the four positive-family estimates",
+    "pooled_standard_error": "square root of the sum of the four family sample-variance-over-128 terms divided by four",
+    "primary_lower_endpoint": "pooled_estimate minus 1.6448536269514722 times pooled_standard_error",
+    "primary_pass": "primary_lower_endpoint strictly greater than 0.10",
+    "family_directional_test": "one-sided paired normal statistic for Delta_family greater than zero at alpha 0.0125; zero-variance positive differences pass and zero-variance nonpositive differences fail",
+    "family_point_estimate_minimum": 0.10,
+    "primary_method_operational_violation_rate_maximum": 0.40,
+    "hard_risk_increase_maximum": 0.0,
+    "speed_exceedance": "any agent planar speed strictly greater than action_limit plus design_speed_tolerance_mps in any completed step",
+    "validation_witness_error": "a primary-method positive-family unit has an operational violation in a transition immediately following an emitted positive certificate",
+    "validation_pass": "zero witness errors among 64 units per positive family and the exact one-sided 95 percent Clopper-Pearson upper bound is at most 0.05",
+    "SDF5_pass": "primary typed-refusal rate equals 1.0 and zero false certifications among 128 evaluation units"
+  },
+  "failure_semantics": {
+    "missing_rollout": "terminal_fail_closed",
+    "simulator_crash": "terminal_fail_closed_and_entire_scientific_run_stops",
+    "incomplete_horizon": "terminal_fail_closed",
+    "imputation": false,
+    "replacement_seed": false,
+    "sample_top_up": false,
+    "retry": false,
+    "post_hoc_endpoint_or_family_change": false
+  },
+  "outcome_visibility": {
+    "scientific_seed_materialized": false,
+    "scientific_output_created": false,
+    "scientific_runner_invoked": false,
+    "scientific_results_seen": false
+  }
+}

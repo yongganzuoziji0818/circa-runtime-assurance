@@ -4,6 +4,11 @@ Research code for Counterfactual-Interval Runtime Control Assurance (CIRCA),
 witness-structured partial identification, finite-sample runtime-assurance
 certificates, and simulator adapters for air-ground coordination studies.
 
+The July 2026 update adds the versioned Gazebo diversity worlds, independent
+adapter, V9 feasible-initial-domain implementation, segmented SCI-S3 runner,
+frozen analysis code, and non-running boundary/schema tests. The corresponding
+outcome-locked evidence is released separately as a versioned Zenodo archive.
+
 This is a code-only release. It intentionally excludes manuscripts, author
 contact records, experimental outputs, scientific seeds, execution receipts,
 private infrastructure configuration, and internal governance files.
@@ -39,6 +44,8 @@ src/agc_runtime_assurance/  CIRCA and runtime-assurance implementation
 tests/                      Unit, invariant, schema, and fail-closed tests
 sim/gazebo/                 Gazebo world model
 sim/isaac/                  Isaac Sim USD world models
+scripts/                    Schema, preflight, seed-freeze, and frozen-analysis tools
+experiments/manifests/      Public frozen design contracts required by tests
 ```
 
 ## Scope
@@ -52,4 +59,3 @@ certification.
 ## License
 
 Released under the [MIT License](LICENSE).
-

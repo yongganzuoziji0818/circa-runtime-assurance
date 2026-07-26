@@ -1,0 +1,1061 @@
+{
+  "base_world": {
+    "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1.sdf",
+    "sha256": "d614e1f875b37ce7fca3ce9ef54d0a94f57045405d9a43013e7bde30ec14d00a"
+  },
+  "gazebo_or_scientific_runner_invoked": false,
+  "operationalization_sha256": "ab765f8ea28982ace2930d84f96f92cbd8986bc3191a7866a7468ace00c57c0f",
+  "registry_id": "circa-ress-v8-sim-diversity-r1-world-variants-r1",
+  "route_id": "CIRCA-RESS-V8-SIM-DIVERSITY-R1",
+  "schema_version": "1.0",
+  "scientific_output_created": false,
+  "scientific_seed_generated_or_materialized": false,
+  "status": "PASS_NONSCIENTIFIC_WORLD_VARIANT_BUILD",
+  "variant_count": 10,
+  "variants": [
+    {
+      "candidate": "A",
+      "family": "SDF1",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf1_a.sdf",
+      "scenario_parameters": {
+        "aisle_width_m": 1.6,
+        "layout": "L_wall_intersection",
+        "observation_delay_steps": 1,
+        "occluder_length_m": 1.2,
+        "visible_range_m": 1.0
+      },
+      "sha256": "e87578bd5251cd15db019d1a6dc2b6ab940d4e4a6a2286e333159ed3063b1161",
+      "world_patch": {
+        "actuation_lag_steps": 0,
+        "communication_delay_steps": 0,
+        "lateral_disturbance_mps2": 0.0,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "size": [
+              1.2,
+              0.2,
+              2
+            ]
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0,
+              0.8,
+              0.6,
+              0,
+              0,
+              0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0,
+              -0.8,
+              0.6,
+              0,
+              0,
+              0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 1,
+        "packet_loss": 0.0,
+        "registered_faults": [],
+        "sensor_bias_m": 0.0,
+        "timestamp_jitter_steps": 0
+      }
+    },
+    {
+      "candidate": "B",
+      "family": "SDF1",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf1_b.sdf",
+      "scenario_parameters": {
+        "aisle_width_m": 1.3,
+        "layout": "L_wall_narrow_intersection",
+        "observation_delay_steps": 2,
+        "occluder_length_m": 1.6,
+        "visible_range_m": 0.7
+      },
+      "sha256": "85629f10d0ca25026421ea3318fad97c2ae154d5773d1c958c4cd639d1012ad5",
+      "world_patch": {
+        "actuation_lag_steps": 0,
+        "communication_delay_steps": 0,
+        "lateral_disturbance_mps2": 0.0,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "size": [
+              1.6,
+              0.2,
+              2
+            ]
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0,
+              0.65,
+              0.6,
+              0,
+              0,
+              0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0,
+              -0.65,
+              0.6,
+              0,
+              0,
+              0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 2,
+        "packet_loss": 0.0,
+        "registered_faults": [],
+        "sensor_bias_m": 0.0,
+        "timestamp_jitter_steps": 0
+      }
+    },
+    {
+      "candidate": "A",
+      "family": "SDF2",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf2_a.sdf",
+      "scenario_parameters": {
+        "actuation_lag_steps": 1,
+        "friction_transition": [
+          0.8,
+          0.5
+        ],
+        "slope_degrees": 5.0
+      },
+      "sha256": "9517e8850a907c0e4c3b863285b0ea75b4e5c1ed91e037ce38b56f47ab5e1c3b",
+      "world_patch": {
+        "actuation_lag_steps": 1,
+        "communication_delay_steps": 0,
+        "lateral_disturbance_mps2": 0.0,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": 0.5,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0,
+              0,
+              0,
+              0,
+              0.08726646259971647,
+              0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 0,
+        "packet_loss": 0.0,
+        "registered_faults": [],
+        "sensor_bias_m": 0.0,
+        "timestamp_jitter_steps": 0
+      }
+    },
+    {
+      "candidate": "B",
+      "family": "SDF2",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf2_b.sdf",
+      "scenario_parameters": {
+        "actuation_lag_steps": 2,
+        "friction_transition": [
+          0.8,
+          0.35
+        ],
+        "slope_degrees": 8.0
+      },
+      "sha256": "ac47e4f9c0ab60aa2d557e14020c7db069879646f0269f4a5003dff4617fb3c7",
+      "world_patch": {
+        "actuation_lag_steps": 2,
+        "communication_delay_steps": 0,
+        "lateral_disturbance_mps2": 0.0,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": 0.35,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0,
+              0,
+              0,
+              0,
+              0.13962634015954636,
+              0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 0,
+        "packet_loss": 0.0,
+        "registered_faults": [],
+        "sensor_bias_m": 0.0,
+        "timestamp_jitter_steps": 0
+      }
+    },
+    {
+      "candidate": "A",
+      "family": "SDF3",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf3_a.sdf",
+      "scenario_parameters": {
+        "communication_delay_steps": 2,
+        "observation_delay_steps": 2,
+        "packet_loss": 0.1,
+        "sensor_bias_m": 0.08
+      },
+      "sha256": "853f36264ab3f9983cd1027c0274f9533dabd6c32c9f4e11f0c083e9c71c144c",
+      "world_patch": {
+        "actuation_lag_steps": 0,
+        "communication_delay_steps": 2,
+        "lateral_disturbance_mps2": 0.0,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 2,
+        "packet_loss": 0.1,
+        "registered_faults": [],
+        "sensor_bias_m": 0.08,
+        "timestamp_jitter_steps": 0
+      }
+    },
+    {
+      "candidate": "B",
+      "family": "SDF3",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf3_b.sdf",
+      "scenario_parameters": {
+        "communication_delay_steps": 3,
+        "observation_delay_steps": 3,
+        "packet_loss": 0.25,
+        "sensor_bias_m": 0.15
+      },
+      "sha256": "e91ea3470c24f56a1027faf17fa3d0224e76ef1a4e72b7ab056f0444dd3b7f81",
+      "world_patch": {
+        "actuation_lag_steps": 0,
+        "communication_delay_steps": 3,
+        "lateral_disturbance_mps2": 0.0,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 3,
+        "packet_loss": 0.25,
+        "registered_faults": [],
+        "sensor_bias_m": 0.15,
+        "timestamp_jitter_steps": 0
+      }
+    },
+    {
+      "candidate": "A",
+      "family": "SDF4",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf4_a.sdf",
+      "scenario_parameters": {
+        "actuation_lag_steps": 1,
+        "aisle_width_m": 1.5,
+        "lateral_disturbance_mps2": 0.12,
+        "lateral_offset_m": 0.08,
+        "timestamp_jitter_steps": 1
+      },
+      "sha256": "ca29f59f53a2b2720b5c161f40e086c68fbaf99b48d72432f68e5e8f19a10644",
+      "world_patch": {
+        "actuation_lag_steps": 1,
+        "communication_delay_steps": 0,
+        "lateral_disturbance_mps2": 0.12,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0,
+              0.75,
+              0.6,
+              0,
+              0,
+              0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0,
+              -0.75,
+              0.6,
+              0,
+              0,
+              0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 0,
+        "packet_loss": 0.0,
+        "registered_faults": [],
+        "sensor_bias_m": 0.0,
+        "timestamp_jitter_steps": 1
+      }
+    },
+    {
+      "candidate": "B",
+      "family": "SDF4",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf4_b.sdf",
+      "scenario_parameters": {
+        "actuation_lag_steps": 2,
+        "aisle_width_m": 1.3,
+        "lateral_disturbance_mps2": 0.2,
+        "lateral_offset_m": 0.12,
+        "timestamp_jitter_steps": 2
+      },
+      "sha256": "b968266d91d21cd8d471ad89a34426320432f0abbbb9e7ceae7d5cb008590176",
+      "world_patch": {
+        "actuation_lag_steps": 2,
+        "communication_delay_steps": 0,
+        "lateral_disturbance_mps2": 0.2,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0,
+              0.65,
+              0.6,
+              0,
+              0,
+              0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0,
+              -0.65,
+              0.6,
+              0,
+              0,
+              0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 0,
+        "packet_loss": 0.0,
+        "registered_faults": [],
+        "sensor_bias_m": 0.0,
+        "timestamp_jitter_steps": 2
+      }
+    },
+    {
+      "candidate": "A",
+      "family": "SDF5",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf5_a.sdf",
+      "scenario_parameters": {
+        "expected_terminal": "typed_refusal",
+        "faults": [
+          "stale_action_age_2_steps",
+          "evidence_provenance_hash_mismatch"
+        ]
+      },
+      "sha256": "5367b407c9d142d895b8cd71a88ec49acfb9caa6ea0fde5438fc98975df6923a",
+      "world_patch": {
+        "actuation_lag_steps": 0,
+        "communication_delay_steps": 0,
+        "lateral_disturbance_mps2": 0.0,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 0,
+        "packet_loss": 0.0,
+        "registered_faults": [
+          "stale_action_age_2_steps",
+          "evidence_provenance_hash_mismatch"
+        ],
+        "sensor_bias_m": 0.0,
+        "timestamp_jitter_steps": 0
+      }
+    },
+    {
+      "candidate": "B",
+      "family": "SDF5",
+      "path": "sim/gazebo/circa_ress_v8_sim_diversity_r1_worlds/sdf5_b.sdf",
+      "scenario_parameters": {
+        "expected_terminal": "typed_refusal",
+        "faults": [
+          "monotonic_time_reversal_1_step",
+          "action_expired_1_step"
+        ]
+      },
+      "sha256": "41f43162ad8a2913240230a98f677eb2a16ce50ea9bbd0f3f004464c4ef1bc3f",
+      "world_patch": {
+        "actuation_lag_steps": 0,
+        "communication_delay_steps": 0,
+        "lateral_disturbance_mps2": 0.0,
+        "model_patches": [
+          {
+            "friction": null,
+            "model_name": "sdf1_occluder",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf1_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf2_ramp",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_left",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          },
+          {
+            "friction": null,
+            "model_name": "sdf4_corridor_right",
+            "pose": [
+              0.0,
+              0.0,
+              -1000.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "size": null
+          }
+        ],
+        "observation_delay_steps": 0,
+        "packet_loss": 0.0,
+        "registered_faults": [
+          "monotonic_time_reversal_1_step",
+          "action_expired_1_step"
+        ],
+        "sensor_bias_m": 0.0,
+        "timestamp_jitter_steps": 0
+      }
+    }
+  ]
+}
