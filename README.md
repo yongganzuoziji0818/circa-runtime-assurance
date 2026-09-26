@@ -12,9 +12,26 @@ assumption-matched comparison code, exploratory mechanism analysis, and
 one-command public-artifact verifiers. The corresponding outcome-locked
 evidence is released separately as a versioned Zenodo archive.
 
-This is a code-only release. It intentionally excludes manuscripts, author
-contact records, experimental outputs, scientific seeds, execution receipts,
-private infrastructure configuration, and internal governance files.
+The historical release is code-only. The September 2026 addition below also
+includes author-constructed software fixtures and their local comparison output;
+it does not add simulator outcomes. Manuscripts, author contact records,
+scientific seeds, private infrastructure configuration and internal governance
+files remain excluded.
+
+## September 2026 evidence-consumption artifact
+
+[revision/evidence-consumption-20260926](revision/evidence-consumption-20260926)
+contains a separate reference consumer, a locally precommitted comparison with
+four author-implemented conventional rule variants, 44 JSON workflows, retained
+decisions/timings and a standard-library reproducibility verifier. The complete
+stateful comparator and CIRCA both have zero mistaken acceptances on the fixed
+32 ineligible cases and zero unwarranted refusals on the 10 eligible cases.
+This is functional parity, **not superiority over existing assurance tools**.
+Two extra trust/persistence examples expose responsibilities outside the model.
+
+This versioned addition does not alter the historical implementation or results.
+It is not an authenticated, persistent or concurrent service; operational
+authorization is always disabled. See its README for limitations and commands.
 
 ## Installation
 

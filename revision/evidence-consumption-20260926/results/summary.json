@@ -1,0 +1,205 @@
+{
+  "arms": [
+    {
+      "arm": "numeric_report",
+      "cases": 42,
+      "eligible": 10,
+      "exceptions": 0,
+      "ineligible": 32,
+      "median_ms": 0.0941,
+      "mistaken_acceptances": 28,
+      "p95_ms": 0.1394,
+      "timing_repetitions": 1100,
+      "unwarranted_refusals": 0
+    },
+    {
+      "arm": "typed_report",
+      "cases": 42,
+      "eligible": 10,
+      "exceptions": 0,
+      "ineligible": 32,
+      "median_ms": 0.1012,
+      "mistaken_acceptances": 17,
+      "p95_ms": 0.1491,
+      "timing_repetitions": 1100,
+      "unwarranted_refusals": 0
+    },
+    {
+      "arm": "stateless_rules",
+      "cases": 42,
+      "eligible": 10,
+      "exceptions": 0,
+      "ineligible": 32,
+      "median_ms": 0.1104,
+      "mistaken_acceptances": 4,
+      "p95_ms": 0.1618,
+      "timing_repetitions": 1100,
+      "unwarranted_refusals": 0
+    },
+    {
+      "arm": "stateful_rules",
+      "cases": 42,
+      "eligible": 10,
+      "exceptions": 0,
+      "ineligible": 32,
+      "median_ms": 0.1142,
+      "mistaken_acceptances": 0,
+      "p95_ms": 0.1792,
+      "timing_repetitions": 1100,
+      "unwarranted_refusals": 0
+    },
+    {
+      "arm": "circa",
+      "cases": 42,
+      "eligible": 10,
+      "exceptions": 0,
+      "ineligible": 32,
+      "median_ms": 0.1404,
+      "mistaken_acceptances": 0,
+      "p95_ms": 0.208,
+      "timing_repetitions": 1100,
+      "unwarranted_refusals": 0
+    }
+  ],
+  "commitment_sha256": "3de475959f0f0d956fa19bcb4311f859e12d2e25c49741aa0f0a08394daadf28",
+  "created_utc": "2026-09-26T03:04:19.397341+00:00",
+  "external_boundary_decisions": [
+    {
+      "arm": "numeric_report",
+      "case": "forged_trusted_producer",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "NUMERIC_PASS"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    },
+    {
+      "arm": "typed_report",
+      "case": "forged_trusted_producer",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "TYPED_NUMERIC"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    },
+    {
+      "arm": "stateless_rules",
+      "case": "forged_trusted_producer",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "ADMISSIBLE"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    },
+    {
+      "arm": "stateful_rules",
+      "case": "forged_trusted_producer",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "ADMISSIBLE"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    },
+    {
+      "arm": "circa",
+      "case": "forged_trusted_producer",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "ADMISSIBLE"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    },
+    {
+      "arm": "numeric_report",
+      "case": "restart_lost_revocation",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "NUMERIC_PASS"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    },
+    {
+      "arm": "typed_report",
+      "case": "restart_lost_revocation",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "TYPED_NUMERIC"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    },
+    {
+      "arm": "stateless_rules",
+      "case": "restart_lost_revocation",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "ADMISSIBLE"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    },
+    {
+      "arm": "stateful_rules",
+      "case": "restart_lost_revocation",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "ADMISSIBLE"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    },
+    {
+      "arm": "circa",
+      "case": "restart_lost_revocation",
+      "decision": {
+        "admissible": true,
+        "operational_authorization": false,
+        "status": "ADMISSIBLE"
+      },
+      "exception": null,
+      "expected": null,
+      "family": "external",
+      "scope": "external_boundary"
+    }
+  ],
+  "logical_cpus": 24,
+  "platform": "Windows-11-10.0.26100-SP0",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "python": "3.14.5",
+  "remote_actions": 0,
+  "scientific_runs": 0,
+  "status": "COMPLETE_LOCAL_AUTHOR_CONSTRUCTED_COMPARISON_NOT_FIELD_VALIDATION"
+}

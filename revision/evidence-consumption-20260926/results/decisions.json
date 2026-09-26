@@ -1,0 +1,2862 @@
+[
+  {
+    "arm": "numeric_report",
+    "case": "bad_hash",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "bad_hash",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "bad_hash",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "bad_hash",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "bad_hash",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "boolean_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "NUMERIC_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "boolean_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "boolean_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "boolean_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "boolean_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "boolean_threshold",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "NUMERIC_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "boolean_threshold",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "boolean_threshold",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "boolean_threshold",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "boolean_threshold",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "changed_config_sha256",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "changed_config_sha256",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "changed_config_sha256",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "changed_config_sha256",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "changed_config_sha256",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "HOLD_SCOPE_MISMATCH"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "changed_edge_id",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "changed_edge_id",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "changed_edge_id",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "changed_edge_id",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "changed_edge_id",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "HOLD_SCOPE_MISMATCH"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "changed_model_sha256",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "changed_model_sha256",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "changed_model_sha256",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "changed_model_sha256",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "changed_model_sha256",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "HOLD_SCOPE_MISMATCH"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "changed_scope_id",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "changed_scope_id",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "changed_scope_id",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "changed_scope_id",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "changed_scope_id",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "HOLD_SCOPE_MISMATCH"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "changed_source_sha256",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "changed_source_sha256",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "changed_source_sha256",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "changed_source_sha256",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "changed_source_sha256",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "HOLD_SCOPE_MISMATCH"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "changed_subject_id",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "changed_subject_id",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "changed_subject_id",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "changed_subject_id",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCOPE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "changed_subject_id",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "HOLD_SCOPE_MISMATCH"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "scope",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "empty_issuer",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "empty_issuer",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "empty_issuer",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "empty_issuer",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "empty_issuer",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "expired",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "expired",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "expired",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "TIME_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "expired",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "TIME_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "expired",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "STALE_EXPIRED"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "extra_object_field",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "extra_object_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "extra_object_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "extra_object_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "extra_object_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "extra_request_field",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "extra_request_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "extra_request_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "extra_request_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "extra_request_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "false_interference_modeled",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "false_interference_modeled",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "false_interference_modeled",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PREMISE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "false_interference_modeled",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PREMISE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "false_interference_modeled",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INTERFERENCE_MODELED"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "false_outcome_complete",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "false_outcome_complete",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "false_outcome_complete",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PREMISE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "false_outcome_complete",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PREMISE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "false_outcome_complete",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_OUTCOME_COMPLETE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "false_witness_valid",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "false_witness_valid",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "false_witness_valid",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PREMISE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "false_witness_valid",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PREMISE_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "false_witness_valid",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_WITNESS_VALID"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "premise",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "forged_trusted_producer",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "typed_report",
+    "case": "forged_trusted_producer",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "forged_trusted_producer",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "forged_trusted_producer",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "circa",
+    "case": "forged_trusted_producer",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "fresh_after_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "fresh_after_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "fresh_after_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "fresh_after_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "fresh_after_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "insufficient_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "NUMERIC_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "threshold",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "insufficient_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "threshold",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "insufficient_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "BOUND_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "threshold",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "insufficient_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "BOUND_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "threshold",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "insufficient_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "HOLD_BELOW_REQUIRED_BOUND"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "threshold",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "key_order",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "key_order",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "key_order",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "key_order",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "key_order",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "missing_object_field",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "missing_object_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "missing_object_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "missing_object_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "missing_object_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "missing_request_field",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "missing_request_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "missing_request_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "missing_request_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "missing_request_field",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "mutated_payload",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "mutated_payload",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "mutated_payload",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PIN_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "mutated_payload",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PIN_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "mutated_payload",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_PROVENANCE_MISMATCH"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "naive_timestamp",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "naive_timestamp",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "naive_timestamp",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "naive_timestamp",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "naive_timestamp",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "negative_interval_negative_threshold",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "negative_interval_negative_threshold",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "negative_interval_negative_threshold",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "negative_interval_negative_threshold",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "negative_interval_negative_threshold",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "not_yet_valid",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "not_yet_valid",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "not_yet_valid",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "TIME_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "not_yet_valid",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "TIME_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "not_yet_valid",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "STALE_EXPIRED"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "time",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "out_of_range",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "out_of_range",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "out_of_range",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "out_of_range",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "out_of_range",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "repeat_identical_registration",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "repeat_identical_registration",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "repeat_identical_registration",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "repeat_identical_registration",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "repeat_identical_registration",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "restart_lost_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "typed_report",
+    "case": "restart_lost_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "restart_lost_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "restart_lost_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "circa",
+    "case": "restart_lost_revocation",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": null,
+    "family": "external",
+    "scope": "external_boundary"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "reversed_interval",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "reversed_interval",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "reversed_interval",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "reversed_interval",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "reversed_interval",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "revoked",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "revoked",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "revoked",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "revoked",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REGISTRY_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "revoked",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_REVOKED"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "stale",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "stale",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "stale",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "stale",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REGISTRY_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "stale",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_STALE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "string_boolean",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "string_boolean",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "string_boolean",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "string_boolean",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "string_boolean",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "string_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "NUMERIC_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "string_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "string_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "string_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "string_bound",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "superseded",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "superseded",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "superseded",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "superseded",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REGISTRY_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "superseded",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_SUPERSEDED"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "threshold_equal",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "threshold_equal",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "threshold_equal",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "threshold_equal",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "threshold_equal",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "time_order",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "time_order",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "time_order",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "time_order",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "SCHEMA_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "time_order",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_INVALID_SCHEMA"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "schema",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "timezone_equivalent",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "timezone_equivalent",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "timezone_equivalent",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "timezone_equivalent",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "timezone_equivalent",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "unicode_identity",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "unicode_identity",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "unicode_identity",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "unicode_identity",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "unicode_identity",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "unregistered",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "unregistered",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "unregistered",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "unregistered",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REGISTRY_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "unregistered",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_UNREGISTERED"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "lifecycle",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "valid",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "valid",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "valid",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "valid",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "valid",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "window_end",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "window_end",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "window_end",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "window_end",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "window_end",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "window_start",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "window_start",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "window_start",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "window_start",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "window_start",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "ADMISSIBLE"
+    },
+    "exception": null,
+    "expected": true,
+    "family": "legitimate",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "numeric_report",
+    "case": "wrong_pin",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "NUMERIC_PASS"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "typed_report",
+    "case": "wrong_pin",
+    "decision": {
+      "admissible": true,
+      "operational_authorization": false,
+      "status": "TYPED_NUMERIC"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateless_rules",
+    "case": "wrong_pin",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PIN_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "stateful_rules",
+    "case": "wrong_pin",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "PIN_REFUSE"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  },
+  {
+    "arm": "circa",
+    "case": "wrong_pin",
+    "decision": {
+      "admissible": false,
+      "operational_authorization": false,
+      "status": "REFUSE_PROVENANCE_MISMATCH"
+    },
+    "exception": null,
+    "expected": false,
+    "family": "provenance",
+    "scope": "supported_contract"
+  }
+]
